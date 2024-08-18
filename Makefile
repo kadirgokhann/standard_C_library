@@ -12,6 +12,7 @@ exe: $(OBJ_FILES) lib/libstd_c_funcs.a
 	$(CXX) $(CXXFLAGS) lib/libstd_c_funcs.a main.cpp $(OBJ_FILES) -o main
 
 lib/libstd_c_funcs.a : $(OBJ_FILES)
+	mkdir -p lib
 	ar rcs lib/libstd_c_funcs.a $(OBJ_FILES)
 
 all: $(BUILD_DIR) $(OBJ_FILES)
