@@ -17,12 +17,12 @@ namespace STD_C_FUNCS
     int			isalnum(int c);
     int			toupper(int c);
     int			tolower(int c);
-    void*       memset(void *b, int c, size_t len);
+    void*		memset(void *b, int c, size_t len);
     void		bzero(void *s, size_t n);
-    void*       memcpy(void *dst, const void *src, size_t n);
-    void*       memchr(const void *s, int c, size_t n);
+    void*		memcpy(void *dst, const void *src, size_t n);
+    void*		memchr(const void *s, int c, size_t n);
     int			memcmp(const void *s1, const void *s2, size_t n);
-    char*       strnstr(const char *s, const char *need, size_t len);
+    char*		strnstr(const char *s, const char *need, size_t len);
     char*       strchr(const char *s, int c);
     char*       strrchr(const char *s, int c);
     void*       memmove(void *dst, const void *src, size_t len);
